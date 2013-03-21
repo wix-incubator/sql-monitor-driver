@@ -94,7 +94,7 @@ abstract class LoggingInvocationHandler implements InvocationHandler {
     }
 
     protected boolean isThisMethod(Method method, String name, Class<?> returnType, Class<?> ... argsTypes) {
-        if (!name.equals(method.getName()) && returnType.equals(method.getReturnType()) && method.getParameterTypes().length == argsTypes.length)
+        if (!(name.equals(method.getName()) && returnType.equals(method.getReturnType()) && method.getParameterTypes().length == argsTypes.length))
             return false;
         else {
             for (int i=0; i < argsTypes.length; i++) {
