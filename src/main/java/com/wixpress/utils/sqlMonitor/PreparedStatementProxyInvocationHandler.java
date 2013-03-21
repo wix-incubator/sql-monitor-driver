@@ -1,7 +1,5 @@
 package com.wixpress.utils.sqlMonitor;
 
-import ch.qos.logback.classic.Level;
-
 import java.lang.reflect.Method;
 import java.sql.PreparedStatement;
 

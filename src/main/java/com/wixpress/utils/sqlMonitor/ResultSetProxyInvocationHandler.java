@@ -1,7 +1,5 @@
 package com.wixpress.utils.sqlMonitor;
 
-import com.wixpress.framework.util.Pair;
-
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.util.HashSet;
